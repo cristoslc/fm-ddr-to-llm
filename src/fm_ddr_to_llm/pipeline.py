@@ -1,7 +1,7 @@
 """SPEC-006 & SPEC-007: Pipeline orchestration and output format.
 
 Orchestrates the full pipeline: DDR XML → extract IDs → build graph → structured output.
-DDRParser integration is optional — the pipeline works with or without DDRParser output.
+DDRParser is a required external dependency (installed separately from horneks.no).
 """
 
 from __future__ import annotations

@@ -20,11 +20,9 @@ build/
 *.ddr.xml
 *-llm.json
 
-# Local tooling
-.worktrees/
-.agents/
-.claude/
-.tickets/
+# Local tooling / agent state
+# Ignore top-level dotfolders by default; add !/name/ if one should be versioned.
+/.*/
 skills-lock.json
 
 # IDE

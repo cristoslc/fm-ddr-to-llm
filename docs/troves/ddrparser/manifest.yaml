@@ -1,0 +1,44 @@
+trove: ddrparser
+created: 2026-03-17
+refreshed: 2026-03-17
+tags:
+  - filemaker
+  - ddr
+  - xml-parsing
+  - source-control
+  - git
+  - documentation
+
+freshness-ttl:
+  web: 30d
+
+history:
+  - event: created
+    date: 2026-03-17
+    sources: 3
+    notes: "Initial trove with DDRparser product page, blog post, and distribution license/readme"
+
+referenced-by: []
+
+sources:
+  - source-id: horneks-ddrparser
+    type: web
+    url: "https://horneks.no/ddrparser"
+    fetched: 2026-03-17T00:00:00Z
+    title: "DDRparser - FileMaker Solution Documentation"
+    hash: "54f1eca6e8019f2edd93677ca42c78663cdd08e3b91a3defbb51fbcaeb35d209"
+
+  - source-id: horneks-git-source-control-ddrparser
+    type: web
+    url: "https://horneks.no/git-source-control-for-filemaker-meet-ddrparser"
+    fetched: 2026-03-17T00:00:00Z
+    title: "GIT Source Control for FileMaker? Meet DDRparser"
+    hash: "7a9110519faad2f9a96001c6eb76959aa9d11add369a7102073061ca907d6a84"
+
+  - source-id: ddrparser-distribution
+    type: document
+    url: "https://horneks.no/?sdm_process_download=1&download_id=485"
+    fetched: 2026-03-17T00:00:00Z
+    title: "DDRparser 1.4.1 Mac Distribution - License and README"
+    hash: "a9b78a619823bf07862086e00c9402c907f66e675d1f4d00e9677df6834cab26"
+    notes: "Extracted license.txt and readme.txt from DMG; binaries not included"
