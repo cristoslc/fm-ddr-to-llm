@@ -1,6 +1,6 @@
 [project]
 name = "fm-ddr-to-llm"
-version = "0.1.0"
+version = "0.1.0a1"
 description = "Deterministic pipeline that converts FileMaker DDR XML into structured, cross-referenced output for LLM consumption"
 readme = "README.md"
 requires-python = ">=3.12"
