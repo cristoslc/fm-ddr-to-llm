@@ -150,7 +150,17 @@ def extract_from_stream(stream: TextIO) -> list[ExtractedObject]:
     return results
 
 
+def _detect_encoding(path: Path) -> str:
+    """Detect XML file encoding from BOM. Returns 'utf-16' or 'utf-8'."""
+    with open(path, "rb") as f:
+        bom = f.read(2)
+    if bom in (b"\xff\xfe", b"\xfe\xff"):
+        return "utf-16"
+    return "utf-8"
+
+
 def extract_from_file(path: Path) -> list[ExtractedObject]:
     """Extract all FM objects from a DDR XML file."""
-    with open(path, encoding="utf-8", errors="replace") as f:
+    encoding = _detect_encoding(path)
+    with open(path, encoding=encoding, errors="replace") as f:
         return extract_from_stream(f)

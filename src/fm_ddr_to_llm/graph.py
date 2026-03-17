@@ -152,7 +152,8 @@ def build_graph_from_ddr_xml(
     current_rel_id = ""
     current_context = ""
 
-    with open(ddr_xml_path, encoding="utf-8", errors="replace") as f:
+    from .extractor import _detect_encoding
+    with open(ddr_xml_path, encoding=_detect_encoding(ddr_xml_path), errors="replace") as f:
         for line in f:
             # Track context: which script/layout/relationship we're inside
             script_match = re.search(r'<Script\s[^>]*\bid="(?P<id>[^"]*)"', line)
