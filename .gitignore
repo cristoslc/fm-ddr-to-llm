@@ -8,6 +8,9 @@ build/
 .venv/
 .pytest_cache/
 
+# uv — lock file not tracked; zero runtime deps, tool install resolves fresh
+uv.lock
+
 # Environment / secrets
 .env
 .env.*
@@ -16,16 +19,18 @@ build/
 *.fmp12
 *.fmp12.lock
 
-# Pipeline input/output (may contain solution metadata)
+# Pipeline input/output (may contain solution data)
 *.ddr.xml
 *-llm.json
 
-# Local tooling / agent state
-# Ignore top-level dotfolders by default; add !/name/ if one should be versioned.
-/.*/
+# Local agent and tooling state (not versioned)
+.agents/
+.claude/
+.goose/
+.worktrees/
 skills-lock.json
 
-# IDE
+# IDE and OS
 .DS_Store
 .idea/
 .vscode/
