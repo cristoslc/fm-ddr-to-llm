@@ -77,4 +77,4 @@ Design minimizes maintenance surface: no running services, isolated extraction p
 
 | Phase | Date | Commit | Notes |
 |-------|------|--------|-------|
-| Active | 2026-03-16 | -- | Initial creation from brainstorming session |
+| Active | 2026-03-16 | 96d1438 | Initial creation from brainstorming session |
