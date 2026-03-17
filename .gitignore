@@ -1,5 +1,33 @@
-.worktrees/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
 .venv/
 .pytest_cache/
+
+# Environment / secrets
+.env
+.env.*
+
+# FileMaker
+*.fmp12
+*.fmp12.lock
+
+# Pipeline input/output (may contain solution metadata)
+*.ddr.xml
+*-llm.json
+
+# Local tooling
+.worktrees/
+.agents/
+.claude/
+.tickets/
+skills-lock.json
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
